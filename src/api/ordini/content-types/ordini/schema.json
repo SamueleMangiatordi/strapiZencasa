@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "ordinis",
+  "info": {
+    "singularName": "ordini",
+    "pluralName": "ordinis",
+    "displayName": "Ordini",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "data": {
+      "type": "datetime"
+    },
+    "prezzo_totale": {
+      "type": "decimal"
+    },
+    "cod_cliente": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::cliente.cliente"
+    },
+    "stato": {
+      "type": "enumeration",
+      "enum": [
+        "in preparazione",
+        "in consegna",
+        "consegnato"
+      ]
+    }
+  }
+}

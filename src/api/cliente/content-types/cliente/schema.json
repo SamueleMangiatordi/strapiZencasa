@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clientes",
+  "info": {
+    "singularName": "cliente",
+    "pluralName": "clientes",
+    "displayName": "Clienti",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "email": {
+      "type": "email"
+    },
+    "nome": {
+      "type": "string"
+    },
+    "cognome": {
+      "type": "string"
+    },
+    "data_nascita": {
+      "type": "date"
+    },
+    "indirizzo": {
+      "type": "string"
+    },
+    "password": {
+      "type": "password"
+    }
+  }
+}
