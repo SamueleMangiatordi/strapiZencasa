@@ -7,7 +7,7 @@ export default [
     config: {
       origin: ['http://localhost:3000'], // URL del tuo frontend React
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'], // Metodi HTTP consentiti
-      headers: ['Content-Type', 'Authorization'], // Header consentiti
+      headers: ['Content-Type', 'Authorization', 'Accept'], // Header consentiti
       keepHeaderOnError: true, // Mantieni l'header nelle risposte di errore
     },
   },

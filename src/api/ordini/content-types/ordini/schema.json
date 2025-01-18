@@ -18,11 +18,6 @@
     "prezzo_totale": {
       "type": "decimal"
     },
-    "cod_cliente": {
-      "type": "relation",
-      "relation": "oneToOne",
-      "target": "api::cliente.cliente"
-    },
     "stato": {
       "type": "enumeration",
       "enum": [
@@ -30,6 +25,11 @@
         "in consegna",
         "consegnato"
       ]
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }

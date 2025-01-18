@@ -12,9 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "email": {
-      "type": "email"
-    },
     "nome": {
       "type": "string"
     },
@@ -27,8 +24,16 @@
     "indirizzo": {
       "type": "string"
     },
-    "password": {
-      "type": "password"
+    "citta": {
+      "type": "string"
+    },
+    "cap": {
+      "type": "integer"
+    },
+    "users_permissions": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user"
     }
   }
 }
